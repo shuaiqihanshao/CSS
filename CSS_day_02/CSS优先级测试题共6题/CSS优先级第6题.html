@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第六题</title>
+	<style>
+		#father #son {
+			color: blue;
+		}
+		#father p .c2 {
+			color: black;
+		}
+		div .c1 p .c2 {
+			color: red;
+		}
+		#father {
+			color: green !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="father" class="c1">
+		<p id="son" class="c2">
+			什么颜色？
+		</p>
+	</div>
+	<span>首先看都有什么标签包含了内容，有son  c2  p 三个标签。第四个样式虽然有无穷大，但是没有选中内容，故权重为0</span>
+</body>
+</html>

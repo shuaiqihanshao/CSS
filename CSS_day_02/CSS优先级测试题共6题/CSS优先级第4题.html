@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第四题</title>
+	<style>
+		div p {
+			color: red;
+		}
+		#father {
+			color: red;
+		}
+		p.c2 {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="father" class="c1">
+		<p class="c2">
+			字体什么颜色？
+		</p>
+	</div>
+	<span>蓝色，首先排除#father，因为没有选中。其次div p  和 p.c2  中都有p  则比较权重大小即可</span>
+</body>
+</html>

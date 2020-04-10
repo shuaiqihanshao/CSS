@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第五题</title>
+	<style>
+		.c1 .c2 div {
+			color: blue;
+		}
+		div #box3 {
+			color: green;
+		}
+		#box1 div {
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="box1" class="c1">
+		<div  id="box2" class="c2">
+			<div  id="box3" class="c3">
+				什么颜色？
+			</div>
+		</div>
+	</div>
+	<span>首先三种样式都选中了内容，则对比权重，发现第一个样式权重为21，第二个和第三个权重均为101，则采用就近原则</span>
+</body>
+</html>

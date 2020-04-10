@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第2题</title>
+	<style>
+		#father {
+			color: red;
+		}
+		p {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="father">
+		<p>试问这行字体是什么颜色</p>
+	</div>
+	<span>答案是蓝色，因为P已经被选出来了，标签选择器权重为 1，且id选择器没有选中，则权重为0</span>
+</body>
+</html>
