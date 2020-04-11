@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新浪导航栏案例</title>
+	<style>
+		/*清除元素默认的内外边距*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.nav {
+			height: 41px;
+			background-color: #FCFCFC;
+			/*上边框*/
+			border-top: 3px solid #FF8500;
+			/*下边框*/
+			border-bottom: 1px solid #EDEEF0;
+		}
+		.nav a {
+			/*转换为行内块 因为链接标签a本身不具有高度和宽度 */
+			display: inline-block;
+			height: 41px;
+			line-height: 41px;
+			color: #4C4C4C;
+			/*background-color: pink;看盒子大小使用的，看完后省略即可*/
+			/*代表 上下是0  左右是20 内边距*/
+			padding: 0 20px;
+			text-decoration: none;
+			font-size: 12px;	
+		}
+		/*设置链接变色需要另起一行去写新的样式*/
+		.nav a:hover {
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="#">设为首页</a>
+		<a href="#">手机新浪网</a>
+		<a href="#">移动客户端 </a>
+		<a href="#">博客</a>
+		<a href="#">微博</a>
+		<a href="#">关注我</a>
+	</div>
+</body>
+</html>
